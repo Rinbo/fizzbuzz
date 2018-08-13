@@ -1,0 +1,8 @@
+#!/home/robin/.rvm/gems/ruby-2.3.4/bin ruby
+require_relative '../lib/fizz_buzz'
+
+while true
+    print "Write a number: "
+    number = gets.chomp.to_i
+    puts number > 0 ? fizz_buzz(number) : "Invalid number. Try again"
+end
